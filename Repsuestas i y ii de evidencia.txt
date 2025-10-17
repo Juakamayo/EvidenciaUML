@@ -1,0 +1,30 @@
+i.
+Clase calculadora: Representa un objeto que se especializa en realizar operaciones matemáticas con números enteros
+Clase CarroCompra: Representa un objeto que almacena una lista de productos
+
+Estamos en un contexto en donde un CarroCompra pueda almacenar una lista y determinar el costo total. El carro hace uso de otra clase el cual es la Calculadora.
+
+ii.
+Clase calculadora:
+atributos:
+-n1
+-n2
+Constructores:
++Calculadora()
++Calculadora(int num1, int num2)
+Métodos:
++Sumar()
++Multiplicar()
++setN1() y setN2()
+
+Clase CarroCompra:
+atributos:
+-productos
+Constructor:
++CarroCompra()
+Métodos:
+-CalcularTotal()
+-subtotal(int cant, int precio)
++mostrarTotal()
+
+La relación que tienen es una dependencia (CarritoCompra--->Calculadora), ya que el CarritoCompra usa dentro de un método a Calculadora, es decir se utiliza localmente dentro de un método y solo lo limitamos a existir en ese metodo
