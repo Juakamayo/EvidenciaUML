@@ -1,0 +1,1 @@
+En este archivo se encuentra el codigo de le evidencia de la primera actividad de UML, en la rama master se encuentra el codigo entregado por el progrrama visual paradigm, en la branch "funcional" se encuentra ese mismo codigo modificado para que este compile, rellenando los metodos y haciendo un pequeño main
