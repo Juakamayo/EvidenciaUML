@@ -1,15 +1,24 @@
 public class Carritocompra {
+    private int [][] productos = new int[2][5];
 
-	private int productos;
 
-	public void CarritoCompra() {
-		// TODO - implement Carritocompra.CarritoCompra
-		throw new UnsupportedOperationException();
-	}
+	public Carritocompra() {
+        for (int i = 0; i < 5; i++) {
+            productos[0][i] = 1;
+            productos[1][i] = 1000;
+        }
+    }
+
 
 	private int calcularTotal() {
-		// TODO - implement Carritocompra.calcularTotal
-		throw new UnsupportedOperationException();
+        int total = 0;
+
+        for (int i = 0; i < 5; i++) {
+
+            total += subTotal(productos[0][i], productos[1][i]);
+        }
+        return total;
+
 	}
 
 	/**
@@ -18,13 +27,13 @@ public class Carritocompra {
 	 * @param precio
 	 */
 	private int subTotal(int cant, int precio) {
-		// TODO - implement Carritocompra.subTotal
-		throw new UnsupportedOperationException();
+        Calculadora calc = new Calculadora(cant, precio);
+        return calc.multiplicar();
+
 	}
 
 	public void mostrarTotal() {
-		// TODO - implement Carritocompra.mostrarTotal
-		throw new UnsupportedOperationException();
+        System.out.println("El total de la compra es: " + this.calcularTotal());
 	}
 
 }
